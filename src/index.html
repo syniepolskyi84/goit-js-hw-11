@@ -4,25 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Image</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="block">
-      <form id="form">
-        <input
-        type="text"
-        class="form-input"
-        name="query"
-        placeholder="Search images..."/>
-      
-        <button type="submit" class="button">Search</button>
-      </form>
-      <!-- <span class="loader">Loading images, please wait...</span> -->
-      <ul class="gallery"></ul>
-
-    </div>
-
+ <header class="container-header">
+<form class="form-search" action="submit">
+  <input class="input-form" type="text" name="query" placeholder="Search images...">
+  <button class="btn-form" type="submit" >Search</button>
+</input>
+</form>
+ </header>
+<main>
+<span class="loader" style="display: none"></span>
+<ul class="gallery"></ul>
+</main>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
+<div class="loader" style="display: none;">Loading...</div>
+<div class="gallery"></div>
